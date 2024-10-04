@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <section id="hero">
+      <section id="home">
         <HeroSection />
       </section>
       <section id="about">
