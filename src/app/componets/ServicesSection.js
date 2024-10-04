@@ -51,7 +51,7 @@ function ServicesSection() {
       <div className="row m-0 p-0  ">
         {serviceData?.map((v, i) => {
           return (
-            <div className="col-4 m-0 p-0">
+            <div className="col-lg-4 col-12 m-0 p-0">
               <div className="serviceCard text-center px-3 py-4 m-4  shadow-sm bg-light">
                 <img src={v?.img} />
                 <h2 className='my-3'>{v?.title}</h2>

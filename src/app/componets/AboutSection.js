@@ -12,14 +12,14 @@ function AboutSection() {
         </p>
       </div>
       <div className="row m-0 p-0  ">
-        <div className="col-6 m-0 p-0">
+        <div className="col-lg-6 col-12 m-0 p-0 order-2 order-lg-1">
           <img
             src="https://bootstrapmade.com/content/demo/eNno/assets/img/about.png"
             className="img-fluid"
           />
         </div>
-        <div className="col-6  p-0 my-auto heroSectionContent ps-5">
-          <div className="aboutContent">
+        <div className="col-lg-6 col-12  p-0 my-auto heroSectionContent ps-lg-5 ps-0 order-2 order-lg-1">
+          <div className="aboutContent mt-4 mt-lg-0 mx-2">
             <h2 className='mb-5 text-secondary'>
               Voluptatem dignissimos provident quasi corporis voluptates sit
               assumenda.
@@ -28,7 +28,7 @@ function AboutSection() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <div className="my-4 ms-5">
+            <div className="my-4 ms-lg-5 ms-0">
               <p className='mb-0'><i className='fa fa-check-circle text-success'/> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               <p className='mb-0'><i className='fa fa-check-circle text-success'/> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               <p className='mb-0'><i className='fa fa-check-circle text-success'/> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

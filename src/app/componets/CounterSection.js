@@ -20,11 +20,11 @@ function CounterSection() {
     },
   ];
   return (
-    <div className="row mt-5 pt-3">
+    <div className="row mt-5 pt-3 bg-light">
       {counterArr?.map((v, i) => {
         return (
-          <div className="col-3">
-            <div className="counterCard">
+          <div className="col-lg-3 col-md-6 col-12">
+            <div className="counterCard mb-5 mb-lg-0">
               <h1>{v?.count}</h1>
               <p>{v?.title}</p>
             </div>

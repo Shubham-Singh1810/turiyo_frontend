@@ -11,8 +11,8 @@ function ContactSection() {
         </p>
       </div>
       <div className="row m-0 p-0 my-5 contactLeftDiv">
-        <div className="col-5 m-0 my-auto  p-0">
-          <div className="p-4 m-2 border shadow-sm rounded">
+        <div className="col-lg-5 col-12 order-2 order-lg-1 m-0 my-auto  p-0">
+          <div className="p-4 m-2 mt-5 border shadow-sm rounded">
             <div className="d-flex align-items-centr ">
               <div className="my-auto">
                 <img src="https://cdn-icons-png.flaticon.com/128/927/927667.png" />
@@ -53,8 +53,8 @@ function ContactSection() {
             </div>
           </div>
         </div>
-        <div className="col-7 m-0 p-0" >
-          <div className="p-4 m-2" >
+        <div className="col-lg-7 col-12 m-0 p-0 order-1 order-lg-2" >
+          <div className="p-lg-4 p-2 m-2" >
             <p className='text-secondary'><u>Get In Touch</u></p>
             <form className="row g-3 my-auto">
             <div className="col-md-6">

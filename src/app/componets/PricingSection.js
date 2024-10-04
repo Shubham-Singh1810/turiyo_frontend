@@ -11,8 +11,8 @@ function PricingSection() {
         </p>
       </div>
       <div className="row m-0 p-0 my-5 ">
-        <div className="col-3 border bg-success d-flex justify-content-center align-items-center text-light" style={{ hight: "100%" }}>
-          <div>
+        <div className="col-12 col-lg-3 border bg-success d-flex justify-content-center align-items-center mb-4 text-light" style={{ hight: "100%" }}>
+          <div className="py-5">
           <h3 className="mb-4">Services And Pricing</h3>
           <p>
             What's special about your services or offerings? Give your audience
@@ -23,8 +23,8 @@ function PricingSection() {
         </div>
         {[1, 2, 3]?.map((v, i) => {
           return (
-            <div className="col-3">
-              <div className="pricingCard">
+            <div className="col-12 col-lg-3">
+              <div className="pricingCard mb-4">
                 <div className=" border shadow-sm">
                   <h5 className="p-3 mb-0 bg-light">Basic</h5>
                   <div className="p-3 my-3">
