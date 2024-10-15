@@ -1,33 +1,33 @@
-"use client"
-import React, {useState, useEffect} from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 
 function Navbar() {
   const navItem = [
     {
       title: "Home",
       path: "/",
-      href:'home'
+      href: "home",
     },
     {
       title: "About",
       path: "/",
-      href:'about'
+      href: "about",
     },
     {
       title: "Services",
       path: "/",
-      href:'services'
+      href: "services",
     },
     {
       title: "Pricing",
       path: "/",
-      href:'pricing'
+      href: "pricing",
     },
     {
       title: "Contact",
       path: "/",
-      href:'contact'
-    }
+      href: "contact",
+    },
   ];
   const [activeSection, setActiveSection] = useState("home");
 
@@ -51,7 +51,7 @@ function Navbar() {
       sections.forEach((section) => observer.unobserve(section));
     };
   }, []);
-  
+
   const handleScroll = (href) => {
     const section = document.getElementById(href);
     if (section) {
@@ -62,7 +62,11 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light py-3 ">
       <div className="container">
         <a className="text-success brandLogo" href="#">
-          <img style={{height:"80px"}} src="https://res.cloudinary.com/dglkjvsk4/image/upload/v1728985558/WhatsApp_Image_2024-10-15_at_15.13.14_nif5cr.jpg" className="img-fluid"/>
+          <img
+            style={{ height: "80px" }}
+            src="https://res.cloudinary.com/dglkjvsk4/image/upload/v1728985558/WhatsApp_Image_2024-10-15_at_15.13.14_nif5cr.jpg"
+            className="img-fluid"
+          />
         </a>
         <button
           className="navbar-toggler"
@@ -80,17 +84,31 @@ function Navbar() {
             {navItem?.map((v, i) => {
               return (
                 <li className="nav-item">
-                  <a className={"nav-link fontSize18 mx-3 fontBold" + (activeSection==v?.href && " navActive   ")} aria-current="page" href={`#${v?.href}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleScroll(v.href);
-                  }}>
-                   {v?.title}
+                  <a
+                    className={
+                      "nav-link fontSize18 mx-3 fontBold" +
+                      (activeSection == v?.href && " navActive   ")
+                    }
+                    aria-current="page"
+                    href={`#${v?.href}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleScroll(v.href);
+                    }}
+                  >
+                    {v?.title}
                   </a>
                 </li>
               );
             })}
-            <button className='btn btn-success btn-sm my-auto ms-lg-5 ms-0' style={{borderRadius:"16px", padding:"6px"}}>Get Started</button>
+            <button
+              className="btn btn-success btn-sm my-auto ms-lg-5 ms-0"
+              style={{ borderRadius: "16px", padding: "6px" }}
+            >
+             
+                Get Started
+             
+            </button>
           </ul>
         </div>
       </div>
