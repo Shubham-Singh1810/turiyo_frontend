@@ -63,7 +63,8 @@ function Footer() {
       <div className="col-lg-3">
           <div className="mx-3">
             <div className="">
-              <h1 className='brandLogo'>Turiyo</h1>
+              <h1 className='brandLogo '> <img style={{height:"100px"}} src="https://res.cloudinary.com/dglkjvsk4/image/upload/v1728985558/WhatsApp_Image_2024-10-15_at_15.13.14_nif5cr.jpg" className="img-fluid"/>
+              </h1>
               <p>
                 Boost your product and service's credibility by adding
                 testimonials from your clients. People love recommendations so
@@ -141,7 +142,7 @@ function Footer() {
       <p
         style={{
           fontSize: "18px",
-          background: "linear-gradient(to right, #198754, black)",
+          background: "linear-gradient(to right, #07BA9A, black)",
         }}
         className="py-3 px-2 mb-0 text-center text-light"
       >

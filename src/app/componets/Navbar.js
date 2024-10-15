@@ -62,7 +62,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light py-3 ">
       <div className="container">
         <a className="text-success brandLogo" href="#">
-          Turiyo
+          <img style={{height:"80px"}} src="https://res.cloudinary.com/dglkjvsk4/image/upload/v1728985558/WhatsApp_Image_2024-10-15_at_15.13.14_nif5cr.jpg" className="img-fluid"/>
         </a>
         <button
           className="navbar-toggler"
