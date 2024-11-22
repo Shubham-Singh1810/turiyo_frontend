@@ -29,16 +29,21 @@
 .borderRadius30 {
   border-radius: 30px !important;
 }
+.heroSectionContent{
+  margin-top: -50px !important;
+}
 .heroSectionContent h1 {
-  font-size: 50px;
+  font-size: 30px;
   color: #5f687b;
   font-family: sans-serif;
   font-weight: 600;
+  text-align: center;
 }
 .heroSectionContent p {
   font-size: 20px;
   color: #5f687b;
   font-family: sans-serif;
+  text-align: center;
 }
 .heroCard img {
   height: 35px;
@@ -58,7 +63,7 @@
 }
 /* hero section end */
 .pageHeading h2 {
-  font-size: 50px;
+  font-size: 35px;
   color: #5f687b;
   font-weight: 500;
   font-family: monospace;
@@ -97,12 +102,12 @@
 }
 
 .serviceCard:hover {
-  border-radius: 12px;
-  box-shadow: 1px 1px 10px #10bc69 !important;
+  border-radius: 6px;
+  box-shadow:1px 1px 1rem #C0202E !important;
 }
 .serviceCard img {
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  /* width: 70px; */
 }
 .serviceCard h2 {
   color: #5f687b;
@@ -111,6 +116,7 @@
 .serviceCard p {
   color: #5f687b;
   font-size: 16px;
+  text-align: justify;
 }
 .contactLeftDiv img {
   height: 30px;
@@ -123,5 +129,8 @@
 @media only screen and (max-width:600px){
   .marginNavTop {
     margin-top: 120px;
+  }
+  .heroSectionContent{
+    margin-top: 0px !important;
   }
 }

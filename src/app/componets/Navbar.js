@@ -4,53 +4,54 @@ import React, { useState, useEffect } from "react";
 function Navbar() {
   const navItem = [
     {
-      title: "Home",
+      title: "Product",
+      path: "/",
+      href: "contact",
+    },
+    {
+      title: "Service",
       path: "/",
       href: "home",
     },
     {
-      title: "About",
+      title: "Consulting",
       path: "/",
       href: "about",
     },
     {
-      title: "Services",
+      title: "Application CLoud",
       path: "/",
       href: "services",
     },
     {
-      title: "Pricing",
+      title: "Solutions",
       path: "/",
       href: "pricing",
     },
-    {
-      title: "Contact",
-      path: "/",
-      href: "contact",
-    },
+    
   ];
   const [activeSection, setActiveSection] = useState("home");
 
-  useEffect(() => {
-    const sections = document.querySelectorAll("section");
+  // useEffect(() => {
+  //   const sections = document.querySelectorAll("section");
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.6 } // Adjust this value for sensitivity
-    );
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           setActiveSection(entry.target.id);
+  //         }
+  //       });
+  //     },
+  //     { threshold: 0.6 } // Adjust this value for sensitivity
+  //   );
 
-    sections.forEach((section) => observer.observe(section));
+  //   sections.forEach((section) => observer.observe(section));
 
-    return () => {
-      sections.forEach((section) => observer.unobserve(section));
-    };
-  }, []);
+  //   return () => {
+  //     sections.forEach((section) => observer.unobserve(section));
+  //   };
+  // }, []);
 
   const handleScroll = (href) => {
     const section = document.getElementById(href);
@@ -63,8 +64,8 @@ function Navbar() {
       <div className="container">
         <a className="text-success brandLogo" href="#">
           <img
-            style={{ height: "80px" }}
-            src="https://res.cloudinary.com/dglkjvsk4/image/upload/v1728985558/WhatsApp_Image_2024-10-15_at_15.13.14_nif5cr.jpg"
+            style={{ height: "40px" }}
+            src="https://tequre.com/wp-content/uploads/2020/04/t-web-logo.png"
             className="img-fluid"
           />
         </a>
@@ -80,14 +81,14 @@ function Navbar() {
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             {navItem?.map((v, i) => {
               return (
                 <li className="nav-item">
                   <a
                     className={
                       "nav-link fontSize18 mx-3 fontBold" +
-                      (activeSection == v?.href && " navActive   ")
+                      (activeSection == v?.href && " navActive- ")
                     }
                     aria-current="page"
                     href={`#${v?.href}`}
@@ -101,15 +102,14 @@ function Navbar() {
                 </li>
               );
             })}
-            <button
-              className="btn btn-success btn-sm my-auto ms-lg-5 ms-0"
-              style={{ borderRadius: "16px", padding: "6px" }}
-            >
-             
-                Get Started
-             
-            </button>
+           
           </ul>
+          <button
+              className="btn btn-success shadow my-auto "
+              style={{background:"#C0202E", borderRadius:"20px", border:"none"}}
+            >
+                Contact Us
+            </button>
         </div>
       </div>
     </nav>

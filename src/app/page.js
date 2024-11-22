@@ -16,19 +16,20 @@ export default function Home() {
       <section id="home">
         <HeroSection />
       </section>
-      <section id="about">
-        <AboutSection />
-      </section>
       <section id="services">
         <ServicesSection />
       </section>
-      <section id="pricing">
+      {/* <section id="about">
+        <AboutSection />
+      </section> */}
+     
+      {/* <section id="pricing">
         <PricingSection />
-      </section>
+      </section> */}
       <section id="contact">
         <ContactSection />
       </section>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 }
