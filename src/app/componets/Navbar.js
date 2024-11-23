@@ -52,6 +52,29 @@ function Navbar() {
       setShowSolutionModule(true);
     }
   };
+  const serviceNavItem = [
+    
+    {
+      title: "Product Engineering ",
+      subTitle: "",
+      img: "",
+    },
+    {
+      title: "Platform Engineering",
+      subTitle: "",
+      img: "",
+    },
+    {
+      title: "Application Modernization",
+      subTitle: "",
+      img: "",
+    },
+    {
+      title: "Cloud Computing",
+      subTitle: "",
+      img: "",
+    },
+  ];
   const solutionNavItem = [
     {
       title: "Low Code Platform",
@@ -197,11 +220,11 @@ function Navbar() {
                 <div className="modal-body navPopBg p-0 shadow" style={{ borderRadius: ".3rem" }}>
                   <div className="row m-0 p-0">
                     <div className="col-5 m-0 p-0">
-                      {[1, 2, 3, 4]?.map((v, i) => {
+                      {serviceNavItem?.map((v, i) => {
                         return (
                           <div className="d-flex w-100">
                             <div className=" m-2 p-2 subMenuDiv w-100">
-                              <h5>Product Engineering </h5>
+                              <h5>{v?.title}</h5>
                               <p>Building faster products MVP lunch & scale </p>
                             </div>
                             <div className="tringle"></div>
