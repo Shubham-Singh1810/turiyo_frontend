@@ -136,9 +136,7 @@ function Navbar() {
     if (name == "Solutions" && showSolutionsModule) {
       return "navActive";
     }
-    if(name=="AI Cloud"){
-      return "navActive";
-    }
+   
   };
   return (
     <>

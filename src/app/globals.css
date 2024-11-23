@@ -192,5 +192,26 @@ border-radius: 12px;
   font-size: 16px;
   opacity: 0.8;
 }
+.gradient-bg {
+  background: linear-gradient(180deg, #eef4ff 0%, #fff 300px);
+}
+.companyStripSection h3{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 4px;
+  font-size: 30px;
+  font-weight: 500;
+letter-spacing: -1px;
+}
+.companyStripSection p{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 4px;
+  font-size: 16px;
+  opacity: 0.8;
+  line-height: 30px;
+}
+.companyStripSection{
+  background-color: whitesmoke;
+}
+
 
 /* navbar end */
