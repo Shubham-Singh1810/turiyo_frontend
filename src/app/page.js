@@ -13,23 +13,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <section id="home">
-        <HeroSection />
-      </section>
-      <section id="services">
-        <ServicesSection />
-      </section>
-      {/* <section id="about">
-        <AboutSection />
-      </section> */}
-     
-      {/* <section id="pricing">
-        <PricingSection />
-      </section> */}
-      <section id="contact">
-        <ContactSection />
-      </section>
-      {/* <Footer/> */}
+      <HeroSection />
     </>
   );
 }

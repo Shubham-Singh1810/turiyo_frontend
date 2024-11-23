@@ -134,3 +134,63 @@
     margin-top: 0px !important;
   }
 }
+
+/* navbar start */
+.navPopBg{
+  background: transparent linear-gradient(243deg, #F4F0FF 0%, #F4F0FF 16%, #DBF6FF 49%, #F0F1FC 70%, #F4F0FC 82%, #E8FEFF 100%) 0% 0% no-repeat
+}
+.servicePopup{
+  width: 800px !important;
+  left: -120px;
+}
+.subMenuDiv p{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 4px;
+  opacity: 0.7;
+  font-size: 14px;
+}
+.subMenuDiv h5{
+  font-size: 18px;
+}
+.subMenuDiv {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: white;
+}
+.subMenuDiv:hover{
+  border: 1px solid gray !important;
+  background-color: white !important;
+}
+.tringle{
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  margin-top: 46px;
+  rotate: 45deg;
+  left: -20px;
+  position: relative;
+}
+.subSubMenuDiv img{
+height: 55px;
+opacity: 0.8;
+padding: 6px;
+border: 1px solid gray;
+border-radius: 8px;
+}
+.serviceSubSubMenuMainDiv{
+background-color: white;
+border-radius: 12px;
+}
+.subSubMenuDiv p{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 4px;
+  opacity: 0.7;
+  font-size: 14px;
+  opacity: 0.8;
+}
+.subSubMenuDiv h5{
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* navbar end */
