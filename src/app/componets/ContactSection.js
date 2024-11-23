@@ -2,13 +2,10 @@ import React from "react";
 
 function ContactSection() {
   return (
-    <div className="container marginNavTop">
-      <div className="pageHeading mb-4">
-        <h2>Contact Us</h2>
-        <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p>
+    <div className="container mt-5 pt-4">
+      <div className="pageHeading ">
+        <h2 style={{color:"#CC1526"}}>Contact Us</h2>
+        
       </div>
       <div className="row m-0 p-0 my-5 contactLeftDiv">
         <div className="col-lg-5 col-12 order-2 order-lg-1 m-0 my-auto  p-0">
@@ -19,7 +16,7 @@ function ContactSection() {
               </div>
               <div className="ms-3">
                 <h5 className="mb-0">Address</h5>
-                <p className="mb-0">A108 Adam Street, New York, NY 535022</p>
+                <p className="mb-0">4650 Brentwood Blvd 1705, Burnaby BC V5C 0M3, Canada</p>
               </div>
             </div>
             <div className="d-flex align-items-centr my-4">
@@ -28,7 +25,7 @@ function ContactSection() {
               </div>
               <div className="ms-3">
                 <h5 className="mb-0">Call Us</h5>
-                <p className="mb-0">+1 5589 55488 55</p>
+                <p className="mb-0">+1 ‪(650) 489-2550‬</p>
               </div>
             </div>
             <div className="d-flex align-items-centr ">
@@ -37,7 +34,7 @@ function ContactSection() {
               </div>
               <div className="ms-3">
                 <h5 className="mb-0">Email Us</h5>
-                <p className="mb-0">info@example.com</p>
+                <p className="mb-0">contact@tequre.com</p>
               </div>
             </div>
             <div className="mt-5">

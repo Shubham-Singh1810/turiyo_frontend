@@ -108,46 +108,59 @@ export default function Home() {
       </div>
       {/* testimonial end */}
       {/* testimonial start */}
-      <div className=" py-5 companyStripSection navPopBg" style={{marginTop:"-50px"}}>
+      <div className=" py-5 companyStripSection navPopBg" style={{ marginTop: "-50px" }}>
         <div className="container">
-        <div className="row m-0 p-0">
-          <div className="col-5">
-            <img className="img-fluid my-3" src="https://www.infracloud.io/assets/img/home/ai-cloud-trail-map/model-observability-feedback-loops.svg"/>
-          <h3 className=" mb-3">
-          <span style={{ color: "#C0202E" }}>We Understand the
-          Nitty-Gritty!</span>
-        </h3>
-        <p>Gain leverage with our proven artificial intelligence expertise & industry exposure. Working with 100+ clients, we know the criticalities, compliances & the importance of getting things right in the first go.</p>
-        <p>Be it an enterprise with datacenters across the world or a rapidly scaling startup, we got it covered!</p>
-          </div>
-          <div className="row col-7 m-0 p-0 ">
-          {[1, 2, 3, 4]?.map((v, i) => {
-            return (
-              <div className={"col-6 m-0 p-0 " }>
-                <div className={"  p-3 shadow-sm bg-light mx-2 mb-3"} >
-                  <div className="d-flex justify-content-center mb-3">
-                    <div className="d-flex align-items-center " >
-<div className="p-1 px-2 rounded shadow-sm bg-light me-3">  <img src="https://cdn-icons-png.flaticon.com/128/2175/2175515.png" style={{height:"30px", width:"30px"}}/></div>
-                     
-                      <div style={{ opacity: "0.8" }}>
-                        <h4 className="mb-0">Banking & Finance</h4>
+          <div className="row m-0 p-0">
+            <div className="col-5">
+              <img
+                className="img-fluid my-3"
+                src="https://www.infracloud.io/assets/img/home/ai-cloud-trail-map/model-observability-feedback-loops.svg"
+              />
+              <h3 className=" mb-3">
+                <span style={{ color: "#C0202E" }}>We Understand the Nitty-Gritty!</span>
+              </h3>
+              <p>
+                Gain leverage with our proven artificial intelligence expertise & industry exposure. Working with 100+
+                clients, we know the criticalities, compliances & the importance of getting things right in the first
+                go.
+              </p>
+              <p>
+                Be it an enterprise with datacenters across the world or a rapidly scaling startup, we got it covered!
+              </p>
+            </div>
+            <div className="row col-7 m-0 p-0 ">
+              {[1, 2, 3, 4]?.map((v, i) => {
+                return (
+                  <div className={"col-6 m-0 p-0 "}>
+                    <div className={"  p-3 shadow-sm bg-light mx-2 mb-3"}>
+                      <div className="d-flex justify-content-center mb-3">
+                        <div className="d-flex align-items-center ">
+                          <div className="p-1 px-2 rounded shadow-sm bg-light me-3">
+                            {" "}
+                            <img
+                              src="https://cdn-icons-png.flaticon.com/128/2175/2175515.png"
+                              style={{ height: "30px", width: "30px" }}
+                            />
+                          </div>
+
+                          <div style={{ opacity: "0.8" }}>
+                            <h4 className="mb-0">Banking & Finance</h4>
+                          </div>
+                        </div>
                       </div>
+                      <p className="" style={{ textAlign: "justify" }}>
+                        “InfraCloud was quickly able to set up a small team and realize our elasticity vision. Their
+                        expertise in working with early-stage features of Kubernetes was second only to their
+                        flexibility in quickly adjusting course as we discovered simpler/better tech options along the
+                        way. ”
+                      </p>
                     </div>
                   </div>
-                  <p className="" style={{ textAlign: "justify" }}>
-                    “InfraCloud was quickly able to set up a small team and realize our elasticity vision. Their
-                    expertise in working with early-stage features of Kubernetes was second only to their flexibility in
-                    quickly adjusting course as we discovered simpler/better tech options along the way. ”
-                  </p>
-                </div>
-              </div>
-            );
-          })}
+                );
+              })}
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
-        
-        
       </div>
       {/* testimonial end */}
       {/* <HomeCardGroup/> */}
