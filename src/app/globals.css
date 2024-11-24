@@ -213,5 +213,7 @@ letter-spacing: -1px;
   background-color: whitesmoke;
 }
 
-
+.modal-backdrop {
+  top: 150px !important;
+}
 /* navbar end */

@@ -41,15 +41,30 @@ function Navbar() {
   const handleNavClick = (navItem) => {
     if (navItem == "Service") {
       setshowServiceModal(true);
+      setShowSolutionModule(false);
+    setShowApplicationCLoudModule(false);
+    setShowConsultingModal(false);
     }
     if (navItem == "Consulting") {
       setShowConsultingModal(true);
+      setshowServiceModal(false);
+      setShowSolutionModule(false);
+    setShowApplicationCLoudModule(false);
+   
     }
     if (navItem == "Application CLoud") {
       setShowApplicationCLoudModule(true);
+      setShowConsultingModal(false);
+      setshowServiceModal(false);
+      setShowSolutionModule(false);
+   
     }
     if (navItem == "Solutions") {
       setShowSolutionModule(true);
+      setShowConsultingModal(false);
+      setshowServiceModal(false);
+     
+    setShowApplicationCLoudModule(false);
     }
   };
   const serviceNavItem = [
