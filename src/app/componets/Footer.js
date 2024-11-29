@@ -30,38 +30,27 @@ function Footer() {
                   <li className="mb-2">
                     <a href="#facebook" className="text-decoration-none">
                       <img
-                        src="https://via.placeholder.com/30"
+                        src="https://cdn-icons-png.flaticon.com/128/2175/2175193.png"
                         alt="Facebook Logo"
                         className="me-2 rounded-circle image-hover"
+                        style={{height:"20px"}}
                       />
                     </a>
                   </li>
                   <li className="mb-2">
                     <a href="#twitter" className="text-decoration-none">
-                      <img src="https://via.placeholder.com/30" alt="Twitter Logo" className="me-2 rounded-circle" />
+                      <img  style={{height:"20px"}} src="https://cdn-icons-png.flaticon.com/128/2168/2168336.png" alt="Twitter Logo" className="me-2 rounded-circle" />
                     </a>
                   </li>
                   <li>
                     <a href="#instagram" className="text-decoration-none">
-                      <img src="https://via.placeholder.com/30" alt="Instagram Logo" className="me-2 rounded-circle" />
+                      <img style={{height:"20px"}} src="https://cdn-icons-png.flaticon.com/128/1384/1384015.png" alt="Instagram Logo" className="me-2 rounded-circle" />
                     </a>
                   </li>
 
-                  <li className="mb-2">
-                    <a href="#facebook" className="text-decoration-none">
-                      <img src="https://via.placeholder.com/30" alt="Facebook Logo" className="me-2 rounded-circle" />
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a href="#twitter" className="text-decoration-none">
-                      <img src="https://via.placeholder.com/30" alt="Twitter Logo" className="me-2 rounded-circle" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#instagram" className="text-decoration-none">
-                      <img src="https://via.placeholder.com/30" alt="Instagram Logo" className="me-2 rounded-circle" />
-                    </a>
-                  </li>
+                 
+                  
+                  
                 </ul>
               </div>
 
