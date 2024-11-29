@@ -165,6 +165,7 @@ export default function Home() {
       {/* testimonial end */}
       {/* <HomeCardGroup/> */}
       <ContactSection />
+      <Footer/>
     </>
   );
 }
