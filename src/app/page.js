@@ -1,18 +1,14 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
 import Navbar from "./componets/Navbar";
 import HeroSection from "./componets/HeroSection";
-import AboutSection from "./componets/AboutSection";
-import CounterSection from "./componets/CounterSection";
-import ServicesSection from "./componets/ServicesSection";
-import PricingSection from "./componets/PricingSection";
 import ContactSection from "./componets/ContactSection";
 import Footer from "./componets/Footer";
-import HomeCardGroup from "./componets/HomeCardGroup";
+
 
 export default function Home() {
+ 
   return (
-    <>
+    <div>
       <Navbar />
       <HeroSection />
       {/* We are a company which enables start-up and enterprise section start */}
@@ -165,7 +161,7 @@ export default function Home() {
       {/* testimonial end */}
       {/* <HomeCardGroup/> */}
       <ContactSection />
-      <Footer/>
-    </>
+      <Footer />
+    </div>
   );
 }

@@ -254,3 +254,105 @@ letter-spacing: -1px;
   background-color: #f0fff0; /* Light green color */
 }
 /* footer end */
+
+.responsive-image {
+  max-width: 100px;
+  height: auto;
+}
+
+.small-text {
+  font-size: 13px;
+}
+.very-small-text{
+  font-size:12px
+}
+.medium-text{
+  font-size:18px
+}
+.text-gray{
+  color:gray;
+}
+
+.image-hover:hover {
+  background-color: #007bff; /* Change background color on hover */
+   /* Optional: Slightly scale the image */
+   cursor: pointer;
+}
+
+.link-hover-orange {
+  color: gray; /* Initial color */
+  transition: color 0.3s; /* Smooth transition */
+}
+
+.link-hover-orange:hover {
+  color: orange; /* Color when hovered */
+}
+
+.bg-light-green {
+  background-color: #f0fff0; /* Light green color */
+}
+
+.custom-dimensions {
+  width: 550px;
+  height: auto;
+}
+.custom-dimensions2{
+  width: 600px;
+  height: auto
+}
+
+.bg-orange{
+  background-color:#f56b06;
+}
+
+.orange-color {
+  color: orange;
+}
+
+.top-to-bottom-color{
+  background: linear-gradient(to bottom, #ebf1f5, #ffffff);
+  
+}
+
+.scrolling-image {
+  position: relative;
+  overflow: hidden;
+  height: 150px; /* Set height for the image container */
+}
+
+.scrolling-image img {
+  position: absolute;
+  bottom: -100%;  /* Start position from below */
+  animation: scroll-up 15s linear infinite; /* Animation for scrolling up */
+}
+
+@keyframes scroll-up {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 100%; /* End position at the top */
+  }
+}
+
+.bg-light-white{
+  background: #fcfcfc;
+}
+
+.hover-effect:hover {
+  transform: scale(1.1); /* Slightly enlarge the div */
+  transition: all 0.5s ease-out,
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bottom shadow effect */
+}
+.bg-dark-blue{
+  background:#5748da;
+}
+.bg-red{
+  background:#000;
+}
+.textJustify{
+  text-align: justify !important;
+}

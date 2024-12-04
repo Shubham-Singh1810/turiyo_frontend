@@ -1,7 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
-
-function Navbar() {
+import Link from "next/link";
+function Navbar({selectedItem}) {
+  
   const navItem = [
     {
       title: "AI Cloud",
@@ -18,7 +19,7 @@ function Navbar() {
       href: "about",
     },
     {
-      title: "Application CLoud",
+      title: "Application Cloud",
       path: "/",
       href: "services",
     },
@@ -42,33 +43,30 @@ function Navbar() {
     if (navItem == "Service") {
       setshowServiceModal(true);
       setShowSolutionModule(false);
-    setShowApplicationCLoudModule(false);
-    setShowConsultingModal(false);
+      setShowApplicationCLoudModule(false);
+      setShowConsultingModal(false);
     }
     if (navItem == "Consulting") {
       setShowConsultingModal(true);
       setshowServiceModal(false);
       setShowSolutionModule(false);
-    setShowApplicationCLoudModule(false);
-   
+      setShowApplicationCLoudModule(false);
     }
     if (navItem == "Application CLoud") {
       setShowApplicationCLoudModule(true);
       setShowConsultingModal(false);
       setshowServiceModal(false);
       setShowSolutionModule(false);
-   
     }
     if (navItem == "Solutions") {
       setShowSolutionModule(true);
       setShowConsultingModal(false);
       setshowServiceModal(false);
-     
-    setShowApplicationCLoudModule(false);
+
+      setShowApplicationCLoudModule(false);
     }
   };
   const serviceNavItem = [
-    
     {
       title: "Product Engineering ",
       subTitle: "",
@@ -174,8 +172,8 @@ function Navbar() {
     if (name == "Solutions" && showSolutionsModule) {
       return "navActive";
     }
-   
   };
+  // const router = useRouter();
   return (
     <>
       <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light py-3 ">
@@ -203,14 +201,16 @@ function Navbar() {
               {navItem?.map((v, i) => {
                 return (
                   <li className="nav-item">
-                    <a
-                      className={"nav-link fontSize18 mx-3 fontBold  " + isNavActive(v?.title)}
+                    <Link 
+                    href={v?.title=="AI Cloud" ? "/ai-cloud" : "#"}
+                      className={"nav-link fontSize18 mx-3 fontBold  " + isNavActive(v?.title) + (selectedItem==v?.title && " navActive")}
                       onMouseEnter={() => handleNavClick(v?.title)}
                       onMouseLeave={() => handleNavClick(v?.title)}
                       style={{ cursor: "pointer" }}
+                      
                     >
                       {v?.title}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}
