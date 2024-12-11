@@ -29,7 +29,7 @@
 .borderRadius30 {
   border-radius: 30px !important;
 }
-.heroSectionContent{
+.heroSectionContent {
   margin-top: -50px !important;
 }
 .heroSectionContent h1 {
@@ -103,7 +103,7 @@
 
 .serviceCard:hover {
   border-radius: 6px;
-  box-shadow:1px 1px 1rem #C0202E !important;
+  box-shadow: 1px 1px 1rem #c0202e !important;
 }
 .serviceCard img {
   height: 70px;
@@ -122,34 +122,29 @@
   height: 30px;
   width: 30px;
 }
-.contactLeftDiv h5{
+.contactLeftDiv h5 {
   color: #5f687b;
 }
 
-@media only screen and (max-width:600px){
-  .marginNavTop {
-    margin-top: 120px;
-  }
-  .heroSectionContent{
-    margin-top: 0px !important;
-  }
-}
+
 
 /* navbar start */
-.navPopBg{
-  background: transparent linear-gradient(243deg, #F4F0FF 0%, #F4F0FF 16%, #DBF6FF 49%, #F0F1FC 70%, #F4F0FC 82%, #E8FEFF 100%) 0% 0% no-repeat
+.navPopBg {
+  background: transparent
+    linear-gradient(243deg, #f4f0ff 0%, #f4f0ff 16%, #dbf6ff 49%, #f0f1fc 70%, #f4f0fc 82%, #e8feff 100%) 0% 0%
+    no-repeat;
 }
-.servicePopup{
+.servicePopup {
   width: 800px !important;
   left: -120px;
 }
-.subMenuDiv p{
-  font-family: 'Poppins', sans-serif;
+.subMenuDiv p {
+  font-family: "Poppins", sans-serif;
   margin-bottom: 4px;
   opacity: 0.7;
   font-size: 14px;
 }
-.subMenuDiv h5{
+.subMenuDiv h5 {
   font-size: 18px;
 }
 .subMenuDiv {
@@ -157,11 +152,10 @@
   border-radius: 3px;
   background-color: white;
 }
-.subMenuDiv:hover{
-  
+.subMenuDiv:hover {
   background-color: white !important;
 }
-.tringle{
+.tringle {
   height: 18px;
   width: 18px;
   background-color: white;
@@ -170,46 +164,46 @@
   left: -20px;
   position: relative;
 }
-.subSubMenuDiv img{
-height: 55px;
-opacity: 0.8;
-padding: 6px;
-border: 1px solid gray;
-border-radius: 8px;
+.subSubMenuDiv img {
+  height: 55px;
+  opacity: 0.8;
+  padding: 6px;
+  border: 1px solid gray;
+  border-radius: 8px;
 }
-.serviceSubSubMenuMainDiv{
-background-color: white;
-border-radius: 12px;
+.serviceSubSubMenuMainDiv {
+  background-color: white;
+  border-radius: 12px;
 }
-.subSubMenuDiv p{
-  font-family: 'Poppins', sans-serif;
+.subSubMenuDiv p {
+  font-family: "Poppins", sans-serif;
   margin-bottom: 4px;
   opacity: 0.7;
   font-size: 14px;
   opacity: 0.8;
 }
-.subSubMenuDiv h5{
+.subSubMenuDiv h5 {
   font-size: 16px;
   opacity: 0.8;
 }
 .gradient-bg {
   background: linear-gradient(180deg, #eef4ff 0%, #fff 300px);
 }
-.companyStripSection h3{
-  font-family: 'Poppins', sans-serif;
+.companyStripSection h3 {
+  font-family: "Poppins", sans-serif;
   margin-bottom: 4px;
   font-size: 30px;
   font-weight: 500;
-letter-spacing: -1px;
+  letter-spacing: -1px;
 }
-.companyStripSection p{
-  font-family: 'Poppins', sans-serif;
+.companyStripSection p {
+  font-family: "Poppins", sans-serif;
   margin-bottom: 4px;
   font-size: 16px;
   opacity: 0.8;
   line-height: 30px;
 }
-.companyStripSection{
+.companyStripSection {
   background-color: whitesmoke;
 }
 
@@ -217,7 +211,6 @@ letter-spacing: -1px;
   top: 150px !important;
 }
 /* navbar end */
-
 
 /* footer start */
 .responsive-image {
@@ -228,17 +221,17 @@ letter-spacing: -1px;
 .small-text {
   font-size: 13px;
 }
-.very-small-text{
-  font-size:12px
+.very-small-text {
+  font-size: 12px;
 }
-.text-gray{
-  color:gray;
+.text-gray {
+  color: gray;
 }
 
 .image-hover:hover {
   background-color: #007bff; /* Change background color on hover */
-   /* Optional: Slightly scale the image */
-   cursor: pointer;
+  /* Optional: Slightly scale the image */
+  cursor: pointer;
 }
 
 .link-hover-orange {
@@ -263,20 +256,20 @@ letter-spacing: -1px;
 .small-text {
   font-size: 13px;
 }
-.very-small-text{
-  font-size:12px
+.very-small-text {
+  font-size: 12px;
 }
-.medium-text{
-  font-size:18px
+.medium-text {
+  font-size: 18px;
 }
-.text-gray{
-  color:gray;
+.text-gray {
+  color: gray;
 }
 
 .image-hover:hover {
   background-color: #007bff; /* Change background color on hover */
-   /* Optional: Slightly scale the image */
-   cursor: pointer;
+  /* Optional: Slightly scale the image */
+  cursor: pointer;
 }
 
 .link-hover-orange {
@@ -296,22 +289,21 @@ letter-spacing: -1px;
   width: 550px;
   height: auto;
 }
-.custom-dimensions2{
+.custom-dimensions2 {
   width: 600px;
-  height: auto
+  height: auto;
 }
 
-.bg-orange{
-  background-color:#f56b06;
+.bg-orange {
+  background-color: #f56b06;
 }
 
 .orange-color {
   color: orange;
 }
 
-.top-to-bottom-color{
+.top-to-bottom-color {
   background: linear-gradient(to bottom, #ebf1f5, #ffffff);
-  
 }
 
 .scrolling-image {
@@ -322,7 +314,7 @@ letter-spacing: -1px;
 
 .scrolling-image img {
   position: absolute;
-  bottom: -100%;  /* Start position from below */
+  bottom: -100%; /* Start position from below */
   animation: scroll-up 15s linear infinite; /* Animation for scrolling up */
 }
 
@@ -335,24 +327,67 @@ letter-spacing: -1px;
   }
 }
 
-.bg-light-white{
+.bg-light-white {
   background: #fcfcfc;
 }
 
 .hover-effect:hover {
   transform: scale(1.1); /* Slightly enlarge the div */
-  transition: all 0.5s ease-out,
+  transition: all 0.5s ease-out;
 }
 
 .hover-shadow:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bottom shadow effect */
 }
-.bg-dark-blue{
-  background:#5748da;
+.bg-dark-blue {
+  background: #5748da;
 }
-.bg-red{
-  background:#000;
+.bg-red {
+  background: #000;
 }
-.textJustify{
+.textJustify {
   text-align: justify !important;
+}
+.navTabMain {
+  border-radius: 30px;
+  background-color: #dbf6ff;
+}
+.navTab {
+  /* background-color: #FAFBFF; */
+  font-family: poppins;
+  border-radius: 24px;
+  opacity: 0.7;
+  width: 160px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+.opacity1 {
+  opacity: 1 !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .marginNavTop {
+    margin-top: 120px;
+  }
+  .heroSectionContent {
+    margin-top: 0px !important;
+  }
+  .navTab {
+    /* background-color: #FAFBFF; */
+    font-family: poppins;
+    border-radius: 24px;
+    opacity: 0.7;
+    width: 110px;
+    font-size: 8px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .imgHeightSlider{
+    height: 180px;
+  }
+}
+.imgHeightSlider{
+  height: 220px;
 }

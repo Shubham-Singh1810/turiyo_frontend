@@ -52,7 +52,7 @@ function Navbar({selectedItem}) {
       setShowSolutionModule(false);
       setShowApplicationCLoudModule(false);
     }
-    if (navItem == "Application CLoud") {
+    if (navItem == "Application Cloud") {
       setShowApplicationCLoudModule(true);
       setShowConsultingModal(false);
       setshowServiceModal(false);
@@ -166,7 +166,7 @@ function Navbar({selectedItem}) {
     if (name == "Consulting" && showConsultingModal) {
       return "navActive";
     }
-    if (name == "Application CLoud" && showApplicationCLoudModule) {
+    if (name == "Application Cloud" && showApplicationCLoudModule) {
       return "navActive";
     }
     if (name == "Solutions" && showSolutionsModule) {
@@ -178,13 +178,13 @@ function Navbar({selectedItem}) {
     <>
       <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light py-3 ">
         <div className="container">
-          <a className="text-success brandLogo" href="#">
+          <Link className="text-success brandLogo" href="/">
             <img
               style={{ height: "40px" }}
               src="https://tequre.com/wp-content/uploads/2020/04/t-web-logo.png"
               className="img-fluid"
             />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
