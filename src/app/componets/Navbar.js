@@ -219,7 +219,8 @@ function Navbar({selectedItem}) {
               className="btn btn-success shadow my-auto "
               style={{ background: "#C0202E", borderRadius: "20px", border: "none" }}
             >
-              Contact Us
+              
+              <Link href="/contactus" style={{textDecoration:"none", color:"white"}}>Contact Us</Link>
             </button>
           </div>
         </div>

@@ -49,7 +49,7 @@ function HomeSlider({data}) {
             <div className="">
               <div className="m-3 mx-4 p-4 shadow h-100">
                 <div>
-                  <img src={v?.img} className="imgHeightSlider" />
+                  <img src={v?.img} className="imgHeightSlider img-fluid" />
                 </div>
                 <div className="mt-3">
                   <h3 style={{ height: "70px" }} className="mb-0">

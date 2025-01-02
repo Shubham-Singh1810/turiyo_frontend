@@ -302,6 +302,13 @@
   color: orange;
 }
 
+.bg-purple{
+  background-color: #631DDD;
+}
+.bg-very-dark-blue{
+  background-color: #3C02A2;
+}
+
 .top-to-bottom-color {
   background: linear-gradient(to bottom, #ebf1f5, #ffffff);
 }
@@ -339,6 +346,19 @@
 .hover-shadow:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bottom shadow effect */
 }
+
+.box-shadow{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 993px) {
+ 
+  .div-static-in-small{
+    position:relative;
+    left: 200px
+  }
+}
+
 .bg-dark-blue {
   background: #5748da;
 }
