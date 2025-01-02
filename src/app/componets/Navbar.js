@@ -92,71 +92,71 @@ function Navbar({selectedItem}) {
     {
       title: "Low Code Platform",
       subTitle: "",
-      img: "",
+      img: "https://cdn-icons-png.flaticon.com/128/9665/9665336.png",
     },
     {
       title: "Account Reconciliation",
       subTitle: "",
-      img: "",
+      img: "https://cdn-icons-png.flaticon.com/128/18137/18137951.png",
     },
     {
       title: "Managed Services For Kubernetes",
       subTitle: "",
-      img: "",
+      img: "https://cdn-icons-png.flaticon.com/128/5969/5969028.png",
     },
     {
       title: "Managed Services For Database",
       subTitle: "",
-      img: "",
+      img: "https://cdn-icons-png.flaticon.com/128/658/658099.png",
     },
   ];
   const applicationCLoudItem = [
     {
       title: "Oracle Fusion",
       subTitle: "",
-      img: "",
+      img: "https://cdn-icons-png.flaticon.com/128/9186/9186792.png",
     },
     {
       title: "Oracle Application Cloud",
       subTitle: "",
-      img: "",
+      img: "https://cdn-icons-png.flaticon.com/128/16232/16232341.png",
     },
     {
       title: "Microsoft Co-Pilot",
       subTitle: "",
-      img: "",
+      img: "https://cdn-icons-png.flaticon.com/128/732/732068.png",
     },
     {
       title: "Microsoft Dynamics",
       subTitle: "",
-      img: "",
+      img: "https://cdn-icons-png.flaticon.com/128/15047/15047637.png",
     },
   ];
   const consultingItem = [
     {
       title: "Cybersecurity",
       subTitle: "",
-      img: "",
+      img: "https://cdn-icons-png.flaticon.com/128/6865/6865349.png",
     },
     {
       title: "Blockchain Consulting",
       subTitle: "",
-      img: "",
+      img: "https://cdn-icons-png.flaticon.com/128/1171/1171519.png",
     },
     {
       title: "Cloud Consulting",
       subTitle: "",
-      img: "",
+      img: "https://cdn-icons-png.flaticon.com/128/14509/14509781.png",
     },
     {
       title: "Cloud Migration",
       subTitle: "",
-      img: "",
+      img: "https://cdn-icons-png.flaticon.com/128/3715/3715124.png",
     },
     {
       title: "Analytics/AI ",
       subTitle: "",
-      img: "",
+      img: "https://cdn-icons-png.flaticon.com/128/1548/1548914.png",
     },
   ];
   const isNavActive = (name) => {
@@ -288,7 +288,7 @@ function Navbar({selectedItem}) {
                               style={{ borderRadius: "12px" }}
                             >
                               <div className=" d-flex align-items-center    ">
-                                <img src="https://cdn-icons-png.flaticon.com/128/12434/12434528.png" />
+                                <img src={v?.img} style={{height:"45px"}} />
                               </div>
                               <div className=" m-2 p-2  w-100">
                                 <h5>{v?.title}</h5>
@@ -322,7 +322,7 @@ function Navbar({selectedItem}) {
                               style={{ borderRadius: "12px" }}
                             >
                               <div className=" d-flex align-items-center    ">
-                                <img src="https://cdn-icons-png.flaticon.com/128/12434/12434528.png" />
+                                <img src={v?.img} style={{height:"45px"}}/>
                               </div>
                               <div className=" m-2 p-2  w-100">
                                 <h5>{v?.title}</h5>
@@ -356,7 +356,7 @@ function Navbar({selectedItem}) {
                               style={{ borderRadius: "12px" }}
                             >
                               <div className=" d-flex align-items-center    ">
-                                <img src="https://cdn-icons-png.flaticon.com/128/12434/12434528.png" />
+                                <img src={v?.img} style={{height:"45px"}}/>
                               </div>
                               <div className=" m-2 p-2  w-100">
                                 <h5>{v?.title}</h5>

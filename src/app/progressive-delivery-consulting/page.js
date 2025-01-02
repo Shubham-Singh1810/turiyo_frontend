@@ -5,10 +5,8 @@ import HorizontalMove from '../componets/HorizontalMove'
 import Nitty_Gritty from '../componets/Nitty_Gritty'
 import WeOpenSource from '../componets/WeOpenSource'
 import Footer from '../componets/Footer'
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Navbar from '../componets/Navbar'
 
 
 function page() {
@@ -38,7 +36,8 @@ function page() {
 
     return (
         <>
-
+<Navbar/>
+<div className='my-5 py-1'></div>
             {/* ================================================================================================================================== */}
             <div className="" >
                 <div className="container">
@@ -47,7 +46,7 @@ function page() {
                         <div className="mt-5 col-md-6 col-12 ">
                             <h2 className="mb-3 fw-bold">Progressive Delivery Consulting & Implementation Experts</h2>
                             <p className="mb-4 text-gray medium-text">Helping companies adopt progressive delivery - from creating a roadmap to successful implementation, & enterprise support.</p>
-                            <button className="btn px-4 py-2 " style={{ background: "#C0202E", borderRadius: "15px", border: "none" }}>Talk to a Progressive Delivery Expert</button>
+                            <button className="btn px-4 py-2 text-light" style={{ background: "#C0202E",  border: "none" }}>Talk to a Progressive Delivery Expert</button>
 
                         </div>
 
@@ -400,7 +399,7 @@ function page() {
                         </p>
 
                         {/* Button */}
-                        <button className="btn px-4 py-2 " style={{ background: "#C0202E", borderRadius: "15px", border: "none" }}>Talk to Progressive Delivery Expert</button>
+                        <button className="btn px-4 py-2 text-light" style={{ background: "#C0202E",  border: "none" }}>Talk to Progressive Delivery Expert</button>
 
                     </div>
                 </div>

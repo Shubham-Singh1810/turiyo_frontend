@@ -240,7 +240,7 @@ export default function Home() {
       </div>
       {/* We are a company which enables start-up and enterprise section end */}
       {/* testimonial start */}
-      <div className="my-5 py-5 companyStripSection">
+      {/* <div className="my-5 py-5 companyStripSection">
         <h3 className="text-center mb-4">
           <span style={{ color: "#C0202E" }}>What do our Customers Say about us</span>
         </h3>
@@ -270,7 +270,7 @@ export default function Home() {
             );
           })}
         </div>
-      </div>
+      </div> */}
       {/* testimonial end */}
       {/* testimonial start */}
       <div className=" py-5 companyStripSection navPopBg" style={{ marginTop: "-50px" }}>

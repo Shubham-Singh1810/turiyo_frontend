@@ -6,8 +6,8 @@ import WeOpenSource from '../componets/WeOpenSource'
 function page() {
     return (
         <>
-            {/* <Navbar /> */}
-
+            <Navbar />
+<div className='my-5 py-1'></div>
             {/* ======================================================================================================== */}
             <div className="" >
                 <div className="container">
@@ -16,7 +16,7 @@ function page() {
                         <div className="mt-5 col-md-5 col-12 ">
                             <h2 className="mb-3 fw-bold">Serverless Function as <br></br>a Service for Kubernetes</h2>
                             <p className="mb-4 text-gray medium-text">Build applications based on Serverless architecture so that your developers can focus on code without worrying about the servers and cost. </p>
-                            <button className="btn px-4 py-2 " style={{ background: "#C0202E", borderRadius: "15px", border: "none" }}>Get Started</button>
+                            <button className="btn px-4 py-2 text-light" style={{ background: "#C0202E",  border: "none" }}>Get Started</button>
 
                         </div>
 
@@ -353,7 +353,7 @@ function page() {
             <div className="mt-5 mb-5">
                 <div className="mt-5 mb-5 p-5 border border-primary container bg-purple text-center" style={{ borderRadius: "12px" }}>
                     <h3 className="p-2 text-white">Let your Developers Focus on the Code without <br></br>Worrying about the Kubernetes Clusters.</h3>
-                    <button className="btn px-5 py-2 " style={{ background: "#C0202E", borderRadius: "15px", border: "none" }}>Contact Us</button>
+                    <button className="btn px-5 py-2 text-light" style={{ background: "#C0202E",  border: "none" }}>Contact Us</button>
                 </div>
             </div>
 

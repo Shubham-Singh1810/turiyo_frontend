@@ -4,11 +4,7 @@ import Footer from '../componets/Footer'
 import WeOpenSource from '../componets/WeOpenSource'
 import Navbar from '../componets/Navbar'
 import Slider from "react-slick";
-
-
-
 function page() {
-
     const settings = {
         dots: true,
         infinite: true,
@@ -16,10 +12,10 @@ function page() {
         slidesToShow: 4,
         slidesToScroll: 2,
     };
-
-
     return (
         <>
+        <Navbar/>
+        <div className='my-5 py-1'></div>
             {/* ================================================================================================================================ */}
             <div className="mt-5 mb-5" >
                 <div className="container">
@@ -28,7 +24,7 @@ function page() {
                         <div className="mt-5 col-md-6 col-12 ">
                             <h2 className="mb-3 fw-bold">Trusted Managed Services for Kubernetes</h2>
                             <p className="mb-4 text-gray medium-text">From advising and implementation to optimization and support - making Kubernetes easier for you.</p>
-                            <button className="btn px-4 py-2 " style={{ background: "#C0202E", borderRadius: "15px", border: "none" }}>Talk to Expert</button>
+                            <button className="btn px-4 py-2 text-light" style={{ background: "#C0202E",  border: "none" }}>Talk to Expert</button>
 
                         </div>
 

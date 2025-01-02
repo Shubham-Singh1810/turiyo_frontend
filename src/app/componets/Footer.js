@@ -67,7 +67,7 @@ function Footer() {
 
               {/* Column 2 */}
 
-              <div className="col-md-9 col-12  mx-0 my-auto p-0 row">
+              {/* <div className="col-md-9 col-12  mx-0 my-auto p-0 row">
                 <div className="row col-md-6 col-12">
                   <div className="col-md-6 col-12  p-3 my-auto">
                     <img
@@ -119,7 +119,7 @@ function Footer() {
                     />
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="row p-2">
                 <div className="col-lg-3 col-md-6 col-12">
                   <div className="mb-5 mt-3 text-start">

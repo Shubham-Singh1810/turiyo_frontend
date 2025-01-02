@@ -6,9 +6,8 @@ import Nitty_Gritty from '../componets/Nitty_Gritty'
 import WeOpenSource from '../componets/WeOpenSource'
 import Footer from '../componets/Footer'
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Navbar from '../componets/Navbar'
 
 
 function page() {
@@ -41,6 +40,8 @@ function page() {
 
             {/* ================================================================================================================================== */}
             <div className="" >
+            <Navbar />
+            <div className='my-5 py-1'></div>
                 <div className="container">
                     <div className=" row  ">
 
@@ -49,7 +50,7 @@ function page() {
                             for DevOps Automation</h2>
                             <p className="mb-4 text-gray medium-text">Design, build & deploy your applications faster
                             with our trusted CI/CD consulting services.</p>
-                            <button className="btn px-4 py-2 " style={{ background: "#C0202E", borderRadius: "15px", border: "none" }}>Talk to a CI/CD Expert</button>
+                            <button className="btn text-light px-4 py-2 " style={{ background: "#C0202E",  border: "none" }}>Talk to a CI/CD Expert</button>
 
                         </div>
 
@@ -404,7 +405,7 @@ function page() {
                         </p>
 
                         {/* Button */}
-                        <button className="btn px-4 py-2 " style={{ background: "#C0202E", borderRadius: "15px", border: "none" }}>Talk to Progressive Delivery Expert</button>
+                        <button className="btn px-4 py-2 text-light" style={{ background: "#C0202E",  border: "none" }}>Talk to Progressive Delivery Expert</button>
 
                     </div>
                 </div>
