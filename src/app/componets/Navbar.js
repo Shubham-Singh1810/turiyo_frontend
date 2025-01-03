@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+
 function Navbar({selectedItem}) {
   
   const navItem = [
@@ -93,21 +94,25 @@ function Navbar({selectedItem}) {
       title: "Low Code Platform",
       subTitle: "",
       img: "https://cdn-icons-png.flaticon.com/128/9665/9665336.png",
+       url:"/low-code-platform"
     },
     {
       title: "Account Reconciliation",
       subTitle: "",
       img: "https://cdn-icons-png.flaticon.com/128/18137/18137951.png",
+       url:"/account-reconcilation"
     },
     {
       title: "Managed Services For Kubernetes",
       subTitle: "",
       img: "https://cdn-icons-png.flaticon.com/128/5969/5969028.png",
+      url:"/managed-services-kubernetes"
     },
     {
       title: "Managed Services For Database",
       subTitle: "",
       img: "https://cdn-icons-png.flaticon.com/128/658/658099.png",
+       url:"/managed-services-kubernetes"
     },
   ];
   const applicationCLoudItem = [
@@ -115,21 +120,25 @@ function Navbar({selectedItem}) {
       title: "Oracle Fusion",
       subTitle: "",
       img: "https://cdn-icons-png.flaticon.com/128/9186/9186792.png",
+      url:"/oracle-fusion"
     },
     {
       title: "Oracle Application Cloud",
       subTitle: "",
       img: "https://cdn-icons-png.flaticon.com/128/16232/16232341.png",
+      url:"/oracle-application-cloud"
     },
     {
       title: "Microsoft Co-Pilot",
       subTitle: "",
       img: "https://cdn-icons-png.flaticon.com/128/732/732068.png",
+      url:"/microsoft-co-pilot"
     },
     {
       title: "Microsoft Dynamics",
       subTitle: "",
       img: "https://cdn-icons-png.flaticon.com/128/15047/15047637.png",
+      url:"/microsoft-dynamics"
     },
   ];
   const consultingItem = [
@@ -137,26 +146,31 @@ function Navbar({selectedItem}) {
       title: "Cybersecurity",
       subTitle: "",
       img: "https://cdn-icons-png.flaticon.com/128/6865/6865349.png",
+       url:"/cyber-security"
     },
     {
       title: "Blockchain Consulting",
       subTitle: "",
       img: "https://cdn-icons-png.flaticon.com/128/1171/1171519.png",
+       url:"/blockchain-consulting"
     },
     {
       title: "Cloud Consulting",
       subTitle: "",
       img: "https://cdn-icons-png.flaticon.com/128/14509/14509781.png",
+      url:"/cloud-consulting"
     },
     {
       title: "Cloud Migration",
       subTitle: "",
       img: "https://cdn-icons-png.flaticon.com/128/3715/3715124.png",
+       url:"/cloud-migration"
     },
     {
       title: "Analytics/AI ",
       subTitle: "",
       img: "https://cdn-icons-png.flaticon.com/128/1548/1548914.png",
+       url:"/analytics"
     },
   ];
   const isNavActive = (name) => {
@@ -279,23 +293,26 @@ function Navbar({selectedItem}) {
               <div className="modal-content servicePopup">
                 <div className="modal-body navPopBg p-0 shadow" style={{ borderRadius: ".3rem" }}>
                   <div className="container">
-                    <div className="row m-0 p-0">
+                    <div className="row m-0 py-2 px-0">
                       {consultingItem?.map((v, i) => {
                         return (
-                          <div className="col-6 m-0 p-0">
+                          <Link href={v?.url} className="col-6 m-0 p-0 text-dark text-decoration-none">
+                             <div className="">
                             <div
-                              className="d-flex align-items-center bg-light m-2 px-2 py-0 subSubMenuDiv"
+                              className="d-flex  bg-light m-2 p-3  subSubMenuDiv"
                               style={{ borderRadius: "12px" }}
                             >
-                              <div className=" d-flex align-items-center    ">
+                              <div className=" d-flex     ">
                                 <img src={v?.img} style={{height:"45px"}} />
                               </div>
-                              <div className=" m-2 p-2  w-100">
+                              <div className=" mx-2 px-2  w-100">
                                 <h5>{v?.title}</h5>
                                 <p>Building faster products MVP lunch & scale </p>
                               </div>
                             </div>
                           </div>
+                          </Link>
+                         
                         );
                       })}
                     </div>
@@ -313,23 +330,26 @@ function Navbar({selectedItem}) {
               <div className="modal-content servicePopup">
                 <div className="modal-body navPopBg p-0 shadow" style={{ borderRadius: ".3rem" }}>
                   <div className="container">
-                    <div className="row m-0 p-0">
+                    <div className="row m-0 py-2 px-0">
                       {applicationCLoudItem?.map((v, i) => {
                         return (
-                          <div className="col-6 m-0 p-0">
+                          <Link href={v?.url}  className="col-6 m-0 p-0 text-dark text-decoration-none" >
+                          <div>
                             <div
-                              className="d-flex align-items-center bg-light m-2 px-2 py-0 subSubMenuDiv"
+                              className="d-flex  bg-light m-2 p-3 subSubMenuDiv"
                               style={{ borderRadius: "12px" }}
                             >
-                              <div className=" d-flex align-items-center    ">
+                              <div className=" d-flex  ">
                                 <img src={v?.img} style={{height:"45px"}}/>
                               </div>
-                              <div className=" m-2 p-2  w-100">
+                              <div className=" mx-2 px-2  w-100">
                                 <h5>{v?.title}</h5>
                                 <p>Building faster products MVP lunch & scale </p>
                               </div>
                             </div>
                           </div>
+                          </Link>
+                          
                         );
                       })}
                     </div>
@@ -347,23 +367,26 @@ function Navbar({selectedItem}) {
               <div className="modal-content servicePopup">
                 <div className="modal-body navPopBg p-0 shadow" style={{ borderRadius: ".3rem" }}>
                   <div className="container">
-                    <div className="row m-0 p-0">
+                    <div className="row m-0 py-2 px-0">
                       {solutionNavItem?.map((v, i) => {
                         return (
-                          <div className="col-6 m-0 p-0">
+                          <Link href={v?.url}  className="col-6 m-0 p-0 text-dark text-decoration-none" >
+                          <div>
                             <div
-                              className="d-flex align-items-center bg-light m-2 px-2 py-0 subSubMenuDiv"
+                              className="d-flex  bg-light m-2 p-3 subSubMenuDiv"
                               style={{ borderRadius: "12px" }}
                             >
-                              <div className=" d-flex align-items-center    ">
+                              <div className=" d-flex  ">
                                 <img src={v?.img} style={{height:"45px"}}/>
                               </div>
-                              <div className=" m-2 p-2  w-100">
+                              <div className=" mx-2 px-2  w-100">
                                 <h5>{v?.title}</h5>
                                 <p>Building faster products MVP lunch & scale </p>
                               </div>
                             </div>
                           </div>
+                          </Link>
+                          
                         );
                       })}
                     </div>

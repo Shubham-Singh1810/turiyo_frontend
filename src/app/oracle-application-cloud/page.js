@@ -14,7 +14,7 @@ function page() {
                     <div className=" row  ">
 
                         <div className="mt-5 col-md-5 col-12 ">
-                            <h2 className="mb-3 fw-bold">Serverless Function as <br></br>a Service for Kubernetes</h2>
+                            <h2 className="mb-3 fw-bold">Oracle Application Cloud <br></br>a Service for Oracle</h2>
                             <p className="mb-4 text-gray medium-text">Build applications based on Serverless architecture so that your developers can focus on code without worrying about the servers and cost. </p>
                             <button className="btn px-4 py-2 text-light" style={{ background: "#C0202E",  border: "none" }}>Get Started</button>
 
