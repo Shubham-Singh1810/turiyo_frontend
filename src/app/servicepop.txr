@@ -1,0 +1,44 @@
+ {showServiceModal && (
+          <div className="modal show d-block" tabIndex="-1" role="dialog" style={{ top: "60px" }}>
+            <div className="modal-dialog" role="document">
+              <div className="modal-content servicePopup">
+                <div className="modal-body navPopBg p-0 shadow" style={{ borderRadius: ".3rem" }}>
+                  <div className="row m-0 p-0">
+                    <div className="col-5 m-0 p-0">
+                      {serviceNavItem?.map((v, i) => {
+                        return (
+                          <div className="d-flex w-100">
+                            <div className=" m-2 p-2 subMenuDiv w-100">
+                              <h5>{v?.title}</h5>
+                              <p>Building faster products MVP lunch & scale </p>
+                            </div>
+                            <div className="tringle"></div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                    <div className="col-7 m-0 p-0 ">
+                      <div className="serviceSubSubMenuMainDiv m-2 px-2 py-1  shadow-sm">
+                        {[1, 2, 3, 4]?.map((v, i) => {
+                          return (
+                            <div className="d-flex align-items-center w-100 subSubMenuDiv">
+                              <div className="">
+                                <img src="https://cdn-icons-png.flaticon.com/128/12434/12434528.png" />
+                              </div>
+                              <div className=" m-2 p-2  w-100">
+                                <h5>Product Engineering </h5>
+                                <p>Building faster products MVP lunch & scale </p>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Overlay */}
+            <div className="modal-backdrop  show" onClick={handleClose} style={{ background: "none" }}></div>
+          </div>
+        )}

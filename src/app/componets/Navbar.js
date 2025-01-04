@@ -71,22 +71,26 @@ function Navbar({selectedItem}) {
     {
       title: "Product Engineering ",
       subTitle: "",
-      img: "",
+      img: "https://cdn-icons-png.flaticon.com/128/18478/18478942.png",
+      url:"/low-code-platform"
     },
     {
       title: "Platform Engineering",
       subTitle: "",
-      img: "",
+      img: "https://cdn-icons-png.flaticon.com/128/16136/16136918.png",
+      url:"/low-code-platform"
     },
     {
       title: "Application Modernization",
       subTitle: "",
-      img: "",
+      img: "https://cdn-icons-png.flaticon.com/128/4657/4657353.png",
+      url:"/low-code-platform"
     },
     {
       title: "Cloud Computing",
       subTitle: "",
-      img: "",
+      img: "https://cdn-icons-png.flaticon.com/128/3661/3661736.png",
+      url:"/low-code-platform"
     },
   ];
   const solutionNavItem = [
@@ -243,41 +247,35 @@ function Navbar({selectedItem}) {
         {/* Button to open the modal */}
 
         {/* Modal */}
+       
         {showServiceModal && (
           <div className="modal show d-block" tabIndex="-1" role="dialog" style={{ top: "60px" }}>
             <div className="modal-dialog" role="document">
               <div className="modal-content servicePopup">
                 <div className="modal-body navPopBg p-0 shadow" style={{ borderRadius: ".3rem" }}>
-                  <div className="row m-0 p-0">
-                    <div className="col-5 m-0 p-0">
+                  <div className="container">
+                    <div className="row m-0 py-2 px-0">
                       {serviceNavItem?.map((v, i) => {
                         return (
-                          <div className="d-flex w-100">
-                            <div className=" m-2 p-2 subMenuDiv w-100">
-                              <h5>{v?.title}</h5>
-                              <p>Building faster products MVP lunch & scale </p>
-                            </div>
-                            <div className="tringle"></div>
-                          </div>
-                        );
-                      })}
-                    </div>
-                    <div className="col-7 m-0 p-0 ">
-                      <div className="serviceSubSubMenuMainDiv m-2 px-2 py-1  shadow-sm">
-                        {[1, 2, 3, 4]?.map((v, i) => {
-                          return (
-                            <div className="d-flex align-items-center w-100 subSubMenuDiv">
-                              <div className="">
-                                <img src="https://cdn-icons-png.flaticon.com/128/12434/12434528.png" />
+                          <Link href={v?.url} className="col-6 m-0 p-0 text-dark text-decoration-none">
+                             <div className="">
+                            <div
+                              className="d-flex  bg-light m-2 p-3  subSubMenuDiv"
+                              style={{ borderRadius: "12px" }}
+                            >
+                              <div className=" d-flex     ">
+                                <img src={v?.img} style={{height:"45px"}} />
                               </div>
-                              <div className=" m-2 p-2  w-100">
-                                <h5>Product Engineering </h5>
+                              <div className=" mx-2 px-2  w-100">
+                                <h5>{v?.title}</h5>
                                 <p>Building faster products MVP lunch & scale </p>
                               </div>
                             </div>
-                          );
-                        })}
-                      </div>
+                          </div>
+                          </Link>
+                         
+                        );
+                      })}
                     </div>
                   </div>
                 </div>

@@ -10,60 +10,7 @@ function Footer() {
             {/* Row with 2 Columns */}
             <div className="row">
               {/* Column 1 */}
-              <div className="col-12 col-md-3  p-3">
-                {/* Image */}
-                <div className="mb-3 text-start">
-                  <img
-                    src="https://tequre.com/wp-content/uploads/2020/04/t-web-logo.png"
-                    alt="Logo"
-                    className="img-fluid responsive-image"
-                  />
-                </div>
-
-                {/* Paragraph */}
-                <p className="text-start small-text text-gray">
-                  We unleash growth by helping companies adopt cloud native technologies with our products and services!
-                </p>
-
-                {/* Links with Icons */}
-                <ul className="list-unstyled d-flex flex-wrap">
-                  <li className="mb-2">
-                    <a href="#facebook" className="text-decoration-none">
-                      <img
-                        src="https://via.placeholder.com/30"
-                        alt="Facebook Logo"
-                        className="me-2 rounded-circle image-hover"
-                      />
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a href="#twitter" className="text-decoration-none">
-                      <img src="https://via.placeholder.com/30" alt="Twitter Logo" className="me-2 rounded-circle" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#instagram" className="text-decoration-none">
-                      <img src="https://via.placeholder.com/30" alt="Instagram Logo" className="me-2 rounded-circle" />
-                    </a>
-                  </li>
-
-                  <li className="mb-2">
-                    <a href="#facebook" className="text-decoration-none">
-                      <img src="https://via.placeholder.com/30" alt="Facebook Logo" className="me-2 rounded-circle" />
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a href="#twitter" className="text-decoration-none">
-                      <img src="https://via.placeholder.com/30" alt="Twitter Logo" className="me-2 rounded-circle" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#instagram" className="text-decoration-none">
-                      <img src="https://via.placeholder.com/30" alt="Instagram Logo" className="me-2 rounded-circle" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              
 
               {/* Column 2 */}
 
@@ -122,6 +69,14 @@ function Footer() {
               </div> */}
               <div className="row p-2">
                 <div className="col-lg-3 col-md-6 col-12">
+               <div className="d-flex">
+               <img
+                    src="https://tequre.com/wp-content/uploads/2020/04/t-web-logo.png"
+                    alt="Logo"
+                    // className="img-fluid"
+                    style={{height:"50px"}}
+                  />
+               </div>
                   <div className="mb-5 mt-3 text-start">
                     {/* Heading */}
                     <h5 className="mb-3 fs-6 text-bold">Product Engineering</h5>
